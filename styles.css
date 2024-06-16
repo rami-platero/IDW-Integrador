@@ -457,6 +457,13 @@ form {
       border: none;
       padding: 0.5rem 1rem;
       color: white;
+      font-size: .9rem;
+      font-weight: regular;
+    }
+
+    label{
+        font-size: 1rem;
+        font-weight: medium;
     }
 
     textarea {
