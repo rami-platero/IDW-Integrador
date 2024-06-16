@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetServices - Registrar prueba de factibilidad</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.png" alt="logo">
+            </a>
+            <ul>
+                <li><a href="./registro-instalacion.html">Registrar instalación</a></li>
+                <li class="current"><a href="./registro-prueba-factibilidad.html">Registrar prueba de factibilidad</a>
+                </li>
+                <li><a href="./solicitar-servicio.html">Solicitar un servicio</a></li>
+                <li><a href="./solicitud.html">Mi solicitud</a></li>
+                <li><a href="./solicitudes.html">Solicitudes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="registroPrueba">
+        <h1>Registro de prueba de factibilidad</h1>
+        <p>Este formulario es utilizado por técnicos de la empresa para registrar pruebas de factibilidad.</p>
+        <form>
+            <div>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div>
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+            <div>
+                <label for="resultado">Resultado</label>
+                <select id="resultado" name="resultado" required>
+                    <option value="">Selecciona el resultado</option>
+                    <option value="exito">Éxito</option>
+                    <option value="fallo">Fallo</option>
+                </select>
+            </div>
+            <div>
+                <label for="solicitud_id">Solicitud Asociada</label>
+                <input type="text" id="solicitud_id" name="solicitud_id">
+            </div>
+            <div>
+                <label for="tecnico">Técnico:</label>
+                <select id="tecnico" name="tecnico" required>
+                    <option value="">Selecciona un técnico</option>
+                    <option value="tecnico1">Técnico 1</option>
+                    <option value="tecnico2">Técnico 2</option>
+                </select>
+            </div>
+            <button type="submit">Registrar Prueba</button>
+        </form>
+    </main>
+    
+    <footer>
+        <h2>NetServices</h2>
+        <ul class="socialLinks">
+            <li><a href="#"><img src="../assets/socials/facebook.png" alt="facebook logo"></a></li>
+            <li><a href="#"><img src="../assets/socials/twitter.png" alt="twitter logo"></a></li>
+            <li><a href="#"><img src="../assets/socials/youtube.png" alt="youtube logo"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

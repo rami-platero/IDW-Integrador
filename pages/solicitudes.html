@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetServices - Solicitudes</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.png" alt="logo">
+            </a>
+            <ul>
+                <li><a href="./registro-instalacion.html">Registrar instalación</a></li>
+                <li><a href="./registro-prueba-factibilidad.html">Registrar prueba de factibilidad</a></li>
+                <li><a href="./solicitar-servicio.html">Solicitar un servicio</a></li>
+                <li><a href="./solicitud.html">Mi solicitud</a></li>
+                <li class="current"><a href="./solicitudes.html">Solicitudes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="solicitudes">
+        <h1>Lista de solicitudes</h1>
+        <div class="filters">
+            <h2>Filtros</h2>
+            <form method="get">
+                <div>
+                    <label for="estado">Estado de la Prueba</label>
+                    <select id="estado" name="estado">
+                        <option value="">Todas</option>
+                        <option value="exito">Éxito</option>
+                        <option value="fallo">Fallo</option>
+                    </select>
+                </div>
+                <div class="rangeWrapper">
+                    <label for="rangoFechas">Rango de Fechas</label>
+                    <input type="date" id="fechaInicio" name="fechaInicio" placeholder="Fecha inicial">
+                    <span> - </span>
+                    <input type="date" id="fechaFin" name="fechaFin" placeholder="Fecha final">
+                </div>
+                <button type="submit">Aplicar Filtros</button>
+            </form>
+        </div>
+        <div class="list">
+            <h2>Lista</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Solicitud ID</th>
+                        <th>Cliente</th>
+                        <th>Fecha de Solicitud</th>
+                        <th>Estado de la Prueba</th>
+                        <th>Técnico</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Cliente A</td>
+                        <td>2024-06-01</td>
+                        <td>Éxito</td>
+                        <td>Técnico 1</td>
+                        <td><a href="#">Ver detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Cliente B</td>
+                        <td>2024-06-02</td>
+                        <td>Fallo</td>
+                        <td>Técnico 2</td>
+                        <td><a href="#">Ver detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Cliente C</td>
+                        <td>2024-06-03</td>
+                        <td>Éxito</td>
+                        <td>Técnico 1</td>
+                        <td><a href="#">Ver detalles</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <h2>NetServices</h2>
+        <ul class="socialLinks">
+            <li><a href="#"><img src="../assets/socials/facebook.png" alt="facebook logo"></a></li>
+            <li><a href="#"><img src="../assets/socials/twitter.png" alt="twitter logo"></a></li>
+            <li><a href="#"><img src="../assets/socials/youtube.png" alt="youtube logo"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

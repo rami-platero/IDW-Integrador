@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetServices - Registrar instalación de servicio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.png" alt="logo">
+            </a>
+            <ul>
+                <li class="current"><a href="./registro-instalacion.html">Registrar instalación</a></li>
+                <li><a href="./registro-prueba-factibilidad.html">Registrar prueba de factibilidad</a></li>
+                <li><a href="./solicitar-servicio.html">Solicitar un servicio</a></li>
+                <li><a href="./solicitud.html">Mi solicitud</a></li>
+                <li><a href="./solicitudes.html">Solicitudes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="registroInstalacion">
+        <h1>Registro de instalación de servicio</h1>
+        <p>Este formulario es utilizado por técnicos de la empresa para registrar instalaciones de servicios de internet.</p>
+        <form>
+            <div>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div>
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+            <div>
+                <label for="observaciones">Observaciones</label>
+                <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea>
+            </div>
+            <div>
+                <label for="tecnico">Técnico</label>
+                <select id="tecnico" name="tecnico" required>
+                    <option value="">Selecciona un técnico</option>
+                    <option value="tecnico1">Técnico 1</option>
+                    <option value="tecnico2">Técnico 2</option>
+                </select>
+            </div>
+            <div>
+                <label for="solicitud_id">Solicitud Asociada</label>
+                <input type="text" id="solicitud_id" name="solicitud_id">
+            </div>
+            <button type="submit">Registrar Instalación</button>
+        </form>
+    </main>
+    <footer>
+        <h2>NetServices</h2>
+        <ul class="socialLinks">
+            <li><a href="#"><img src="../assets/socials/facebook.png" alt="facebook logo"></a></li>
+            <li><a href="#"><img src="../assets/socials/twitter.png" alt="twitter logo"></a></li>
+            <li><a href="#"><img src="../assets/socials/youtube.png" alt="youtube logo"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

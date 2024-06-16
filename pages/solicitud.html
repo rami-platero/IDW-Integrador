@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetServices - Solicitud</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.png" alt="logo">
+            </a>
+            <ul>
+                <li><a href="./registro-instalacion.html">Registrar instalación</a></li>
+                <li><a href="./registro-prueba-factibilidad.html">Registrar prueba de factibilidad</a></li>
+                <li><a href="./solicitar-servicio.html">Solicitar un servicio</a></li>
+                <li class="current"><a href="./solicitud.html">Mi solicitud</a></li>
+                <li><a href="./solicitudes.html">Solicitudes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="miSolicitud">
+        <h1>Mi solicitud</h1>
+        <div class="filters">
+            <h2>Filtros</h2>
+            <form id="miSolicitudFiltros">
+                <div>
+                    <label for="DNI">DNI</label>
+                    <input type="number" required value="44674731" name="DNI">
+                </div>
+                <button type="submit">Aplicar Filtros</button>
+            </form>
+        </div>
+        <div class="list">
+            <h2>Solicitudes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Solicitud ID</th>
+                        <th>Cliente</th>
+                        <th>DNI</th>
+                        <th>Estado</th>
+                        <th>Fecha de Solicitud</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>888</td>
+                        <td>Ramiro Platero</td>
+                        <td>44674731</td>
+                        <td>Éxito</td>
+                        <td>2024-06-01</td>
+                        <td><a href="#">Ver detalles</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <h2>NetServices</h2>
+        <ul class="socialLinks">
+            <li><a href="#"><img src="../assets/socials/facebook.png" alt="facebook logo"></a></li>
+            <li><a href="#"><img src="../assets/socials/twitter.png" alt="twitter logo"></a></li>
+            <li><a href="#"><img src="../assets/socials/youtube.png" alt="youtube logo"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetServices - Solicitar un servicio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.png" alt="logo">
+            </a>
+            <ul>
+                <li><a href="./registro-instalacion.html">Registrar instalación</a></li>
+                <li><a href="./registro-prueba-factibilidad.html">Registrar prueba de factibilidad</a></li>
+                <li class="current"><a href="./solicitar-servicio.html">Solicitar un servicio</a></li>
+                <li><a href="./solicitud.html">Mi solicitud</a></li>
+                <li><a href="./solicitudes.html">Solicitudes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="solicitarServicio">
+        <h1>Registro de instalación de servicio</h1>
+        <p>Por favor llena el siguiente formulario para realizar la solicitud de tu servicio a preferencia.</p>
+        <form action="/submit_solicitud.php" method="post">
+            <div>
+                <label for="tipo_residencia">Tipo de Residencia</label>
+                <select id="tipo_residencia" name="tipo_residencia" required>
+                    <option value="">Selecciona el tipo de residencia</option>
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div>
+                <label for="fecha_solicitud">Fecha de solicitud</label>
+                <input type="date" id="fecha_solicitud" name="fecha_solicitud" required>
+            </div>
+            <div>
+                <label for="horario">Disponibilidad de horarios</label>
+                <input type="time" id="horario" name="horario" required>
+            </div>
+            <div>
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div>
+                <label for="planes">Planes Disponibles</label>
+                <select id="planes" name="planes" required>
+                    <option value="">Selecciona un plan</option>
+                    <option value="300">300Mb - $18.999</option>
+                    <option value="500">500Mb - $22.999</option>
+                    <option value="700">700Mb - $24.999</option>
+                </select>
+            </div>
+            <div>
+                <label for="nombre_completo">Nombre Completo</label>
+                <input type="text" id="nombre_completo" name="nombre_completo" required>
+            </div>
+            <div>
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+            <div>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div>
+                <label for="dni">DNI</label>
+                <input type="number" id="dni" name="dni" required>
+            </div>
+            <div>
+                <button type="submit">Enviar Solicitud</button>
+            </div>
+        </form>
+        
+    </main>
+    <footer>
+        <h2>NetServices</h2>
+        <ul class="socialLinks">
+            <li><a href="#"><img src="../assets/socials/facebook.png" alt="facebook logo"></a></li>
+            <li><a href="#"><img src="../assets/socials/twitter.png" alt="twitter logo"></a></li>
+            <li><a href="#"><img src="../assets/socials/youtube.png" alt="youtube logo"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
