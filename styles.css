@@ -63,7 +63,7 @@ header nav {
     gap: 1rem;
     flex-wrap: wrap;
 
-    li{
+    li {
       margin: 0 auto;
     }
 
@@ -292,7 +292,8 @@ footer {
 
         img {
           width: 100%;
-          height: 150px;
+          height: 170px;
+          object-fit: cover;
         }
 
         .details {
