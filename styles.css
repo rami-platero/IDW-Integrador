@@ -23,6 +23,11 @@ body {
   }
 }
 
+button, a{
+  font-size: .9rem;
+  font-weight: 400;
+}
+
 /* Navigation */
 
 header nav {
@@ -140,8 +145,6 @@ footer {
   text-align: center;
 
   a {
-    font-size: 1rem;
-    font-weight: medium;
     text-decoration: none;
     color: white;
     padding: 0.5rem 1rem;
@@ -305,8 +308,6 @@ footer {
           height: 100%;
 
           a {
-            font-size: 1rem;
-            font-weight: medium;
             text-decoration: none;
             color: white;
             padding: 0.5rem 1rem;
@@ -416,6 +417,7 @@ footer {
     flex-direction: column;
     gap: 0.5rem;
     width: 100%;
+    overflow: auto;
   }
 }
 
@@ -424,6 +426,7 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
 
   .filters {
@@ -441,6 +444,7 @@ footer {
       .rangeWrapper {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
       }
     }
@@ -487,8 +491,6 @@ form {
   }
 
   button[type="submit"] {
-    font-size: 1rem;
-    font-weight: medium;
     color: white;
     padding: 0.5rem 1rem;
     background-color: rgba(52, 54, 194, 0.37);
@@ -496,6 +498,7 @@ form {
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    width: fit-content;
 
     &:hover {
       background-color: rgba(52, 54, 194, 0.747);
@@ -504,11 +507,10 @@ form {
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
   font-size: 0.9rem;
   border-radius: 8px;
-  overflow: hidden;
+  overflow: auto;
   color: white;
 
   tbody {
