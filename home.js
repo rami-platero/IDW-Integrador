@@ -48,23 +48,3 @@ document.addEventListener("DOMContentLoaded", () => {
     startCountdown();
   }
 });
-
-const $miSolicitudFiltrosForm = document.getElementById("miSolicitudFiltros");
-
-const validateDNI = () => {
-  const formData = new FormData($miSolicitudFiltrosForm);
-  const data = {};
-  formData.forEach((value, key) => {
-    data[key] = value;
-  });
-  if (data.DNI.length > 8 || data.DNI.length < 7) {
-    alert("El DNI ingresado no es válido.");
-  }
-};
-
-if($miSolicitudFiltrosForm){
-  $miSolicitudFiltrosForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    validateDNI();
-  });
-}
