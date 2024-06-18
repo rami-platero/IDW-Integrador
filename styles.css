@@ -258,11 +258,12 @@ footer {
     justify-content: center;
     gap: 2rem;
 
-    .description {
+    .cardsDescription {
       font-size: 0.9rem;
       max-width: 600px;
       width: 100%;
       font-weight: 300;
+      text-align: center;
     }
 
     .wrapper {
@@ -457,13 +458,13 @@ form {
       border: none;
       padding: 0.5rem 1rem;
       color: white;
-      font-size: .9rem;
+      font-size: 0.9rem;
       font-weight: regular;
     }
 
-    label{
-        font-size: 1rem;
-        font-weight: medium;
+    label {
+      font-size: 1rem;
+      font-weight: medium;
     }
 
     textarea {
