@@ -62,7 +62,9 @@ const validateDNI = () => {
   }
 };
 
-$miSolicitudFiltrosForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  validateDNI();
-});
+if($miSolicitudFiltrosForm){
+  $miSolicitudFiltrosForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    validateDNI();
+  });
+}
