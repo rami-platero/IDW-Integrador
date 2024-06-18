@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetServices - Solicitud</title>
     <link rel="stylesheet" href="../styles.css">
-    <script defer src="../script.js"></script>
+    <script defer src="../pruebas.js"></script>
 </head>
 
 <body>
@@ -26,41 +26,51 @@
     </header>
     <main id="miSolicitud">
         <h1>Mi solicitud</h1>
-        <div class="filters">
+        <section class="filters">
             <h2>Filtros</h2>
             <form id="miSolicitudFiltros">
                 <div>
                     <label for="DNI">DNI</label>
                     <input type="number" required value="44674731" name="DNI">
                 </div>
-                <button type="submit">Aplicar Filtros</button>
+                <button type="submit">Buscar</button>
             </form>
-        </div>
-        <div class="list">
-            <h2>Solicitudes</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Solicitud ID</th>
-                        <th>Cliente</th>
-                        <th>DNI</th>
-                        <th>Estado</th>
-                        <th>Fecha de Solicitud</th>
-                        <th>Detalles</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>888</td>
-                        <td>Ramiro Platero</td>
-                        <td>44674731</td>
-                        <td>Éxito</td>
-                        <td>2024-06-01</td>
-                        <td><a href="#">Ver detalles</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        </section>
+        <section class="list">
+            <h2>Pruebas de factibilidad</h2>
+            <div id="pruebas-list">
+
+            </div>
+            <template id="table-template">
+                <table id="pruebas-table">
+                    <thead>
+                        <tr>
+                            <th>DNI</th>
+                            <th>Prueba ID</th>
+                            <th>Solicitud ID</th>
+                            <th>Técnico</th>
+                            <th>Resultado</th>
+                            <th>Fecha y hora</th>
+                            <th>Detalles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </template>
+            <template id="tr-template">
+                <tr>
+                    <td data-td="DNI"></td>
+                    <td data-td="pruebaID"></td>
+                    <td data-td="solicitudID"></td>
+                    <td data-td="tecnico"></td>
+                    <td data-td="resultado"></td>
+                    <td data-td="fecha"></td>
+                    <td><a href="#">Ver más detalles</a></td>
+                </tr>
+            </template>
+        </section>
     </main>
     <footer>
         <h2>NetServices</h2>
